@@ -62,6 +62,8 @@ public class ReplaceUtil {
         cont = cont.replaceAll("(?i)pay_account_name", "pay_acct_name");
         cont = cont.replaceAll("(?i)bl_code", "source_type_code");
         cont = cont.replaceAll("(?i)bl_name", "source_type_name");
+        cont = cont.replaceAll("(?i)bsi_code", "dep_bgt_eco_code");
+        cont = cont.replaceAll("(?i)bsi_name", "dep_bgt_eco_name");
 
         System.out.println(cont);
         // 更新源文件
