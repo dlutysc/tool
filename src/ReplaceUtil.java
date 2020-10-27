@@ -39,7 +39,7 @@ public class ReplaceUtil {
 
 
     public static void main(String[] args) {
-        File src = new File("D:/yonyou/上海/脚本/teee.sql");
+        File src = new File("D:/yonyou/上海/脚本/vw_epay_receive_bill_3508.txt");
         String cont = ReplaceUtil.read(src);
         System.out.println(cont);
         // 对得到的内容进行处理
@@ -59,6 +59,8 @@ public class ReplaceUtil {
         cont = cont.replaceAll("(?i)pk_name", "pay_type_name");
         cont = cont.replaceAll("(?i)cb_code", "clear_acct_bank_code");
         cont = cont.replaceAll("(?i)cb_name", "clear_acct_bank_name");
+        cont = cont.replaceAll("(?i)clear_account_no", "clear_acct_no");
+        cont = cont.replaceAll("(?i)clear_account_name", "clear_acct_name");
         cont = cont.replaceAll("(?i)payee_account_no", "payee_acct_no");
         cont = cont.replaceAll("(?i)payee_account_name", "payee_acct_name");
         cont = cont.replaceAll("(?i)pay_account_no", "pay_acct_no");
