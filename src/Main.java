@@ -10,7 +10,7 @@ public class Main {
         InputStreamReader reader = new InputStreamReader(fin);
         BufferedReader buffReader = new BufferedReader(reader);
         String strTmp;
-        while((strTmp = buffReader.readLine())!=null){
+        while((strTmp = buffReader.readLine()) != null){
             System.out.println(strTmp);
             strTmp.replaceAll("en_code", "agency_code");
         }
